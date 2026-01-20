@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Dark Mode by Default (Slate 900 base) */
+    --background: #0f172a;
+    /* Slate 900 */
+    --foreground: #f8fafc;
+    /* Slate 50 */
+    --card: #1e293b;
+    /* Slate 800 */
+    --card-foreground: #f1f5f9;
+    /* Slate 100 */
+    --primary: #3b82f6;
+    /* Blue 500 */
+    --primary-foreground: #ffffff;
+    --secondary: #334155;
+    /* Slate 700 */
+    --secondary-foreground: #e2e8f0;
+    /* Slate 200 */
+    --border: #334155;
+    /* Slate 700 */
+    --muted: #94a3b8;
+    /* Slate 400 */
+    --radius: 0.5rem;
+  }
+
+  /* Light Theme Override */
+  :root[class~="light"] {
+    --background: #f8fafc;
+    /* Slate 50 */
+    --foreground: #0f172a;
+    /* Slate 900 */
+    --card: #ffffff;
+    --card-foreground: #1e293b;
+    /* Slate 800 */
+    --primary: #1e40af;
+    /* Blue 800 */
+    --primary-foreground: #ffffff;
+    --secondary: #f1f5f9;
+    /* Slate 100 */
+    --secondary-foreground: #334155;
+    /* Slate 700 */
+    --border: #e2e8f0;
+    /* Slate 200 */
+    --muted: #64748b;
+    /* Slate 500 */
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased transition-colors duration-300;
+  }
+}
+
+/* Custom Utilities for Scrollbar, etc. */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-secondary rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary;
+}
