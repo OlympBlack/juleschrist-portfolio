@@ -38,7 +38,7 @@ export const projects: Project[] = [
         images: ['/images/karicv/Capture d\'écran 2026-01-20 171049.png', '/images/karicv/Capture d\'écran 2026-01-20 170450.png'],
         links: {
             demo: 'https://karicv.vercel.app/',
-            code: '#'
+            
         }
     },
     {
@@ -61,7 +61,7 @@ export const projects: Project[] = [
         ],
         images: ['/images/scraper/interface.png'],
         links: {
-            code: '#'
+            code: 'https://github.com/OlympBlack/Web-Scraper'
         }
     },
     {
@@ -84,7 +84,7 @@ export const projects: Project[] = [
         ],
         images: ['/images/cheazimo/hero_imo.png'],
         links: {
-            code: '#'
+            demo: 'http://cheazimo.com/'
         }
     },
     {
@@ -108,7 +108,6 @@ export const projects: Project[] = [
         images: ['/images/electrojardin/Capture d\'écran 2025-09-17 190416.png'],
         links: {
             demo: 'https://electrojardin.com/',
-            code: '#'
         }
     },
     {
@@ -131,7 +130,7 @@ export const projects: Project[] = [
         ],
         images: ['/images/dms/Capture d\'écran 2025-09-18 150438.png', '/images/dms/Capture d\'écran 2025-09-18 150533.png'],
         links: {
-            code: '#'
+            demo: 'http://delcomultiservices.com/'
         }
     },
     {
@@ -154,7 +153,7 @@ export const projects: Project[] = [
         ],
         images: ['/images/figma-maketplace/Capture d\'écran 2025-09-19 144642.png', '/images/figma-maketplace/Capture d\'écran 2025-09-19 144102.png'],
         links: {
-            design: '#'
+            design: 'https://www.figma.com/proto/f98DfEgdCLP0VQmHCNr046/Module-8?page-id=0%3A1&node-id=161-254&p=f&viewport=4063%2C1828%2C0.03&t=hs3KHSV3GUTf3CXQ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A2'
         }
     }
 ];
