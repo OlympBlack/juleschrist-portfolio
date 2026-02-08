@@ -182,7 +182,35 @@ export const projects: Project[] = [
         links: {
             design: 'https://www.figma.com/proto/f98DfEgdCLP0VQmHCNr046/Module-8?page-id=0%3A1&node-id=161-254&p=f&viewport=4063%2C1828%2C0.03&t=hs3KHSV3GUTf3CXQ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A2'
         }
-    }
+    },
+
+    {
+        id: 'SallesManager',
+        title: 'SallesManager',
+        description: 'Application de gestion des salles et des cours.',
+        fullDescription: 'SallesManager est une application web de gestion des salles de cours. Elle permet à l’administrateur de créer des salles, d’ajouter des professeurs et des cours, puis d’attribuer chaque cours à une salle et à un professeur responsable. La plateforme offre également un espace dédié aux professeurs pour consulter les cours qu’ils dirigent ainsi que les salles associées, et un espace étudiant pour voir les cours ou modules à suivre, les salles correspondantes et l’emploi du temps.',
+        tags: ['Django', 'Python', 'SQLite', 'bootstrap'],
+        tech: ['Django', 'Python', 'SQLite', 'bootstrap'],
+        stats: [
+            { value: '3', label: 'Rôles utilisateurs' },
+            { value: '100%', label: 'Application Web' },
+            { value: 'CRUD', label: 'Gestion complète' },
+        ],
+        features: [
+            'Espace administrateur pour la gestion des salles, cours et professeurs',
+            'Attribution des salles et des professeurs aux cours',
+            'Espace professeur pour consulter ses cours et salles assignées',
+            'Espace étudiant pour voir les cours, salles et emploi du temps',
+            'Interface simple et intuitive'
+        ],
+        images: [
+            '/images/sallesManager/admin.jpg',
+        ],
+        links: {
+            code: 'https://github.com/OlympBlack/SallesManager.git'
+        }
+    },
+
 ];
 
 export const skills = {

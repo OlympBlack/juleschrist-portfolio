@@ -34,9 +34,10 @@ export const Hero = () => {
                             </span>
                         </h1>
                         <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                            Développeur Fullstack passionné par la création d'expériences web modernes, performantes et intuitives.
-                            Spécialisé en <strong className="text-foreground">React</strong>, <strong className="text-foreground">Laravel</strong> et solutions <strong className="text-foreground">Cloud</strong>.
+                            Développeur Fullstack passionné par la création d’applications web modernes, performantes et orientées utilisateur.
+                            J’aime concevoir des solutions fiables, évolutives et bien structurées, en m’adaptant aux besoins techniques et métiers.
                         </p>
+
 
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
                             <a
