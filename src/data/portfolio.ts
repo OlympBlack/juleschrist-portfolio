@@ -119,7 +119,7 @@ export const projects: Project[] = [
         title: 'ElectroJardin',
         description: "E-commerce complet avec gestion de stock et paiements.",
         fullDescription: "Une plateforme e-commerce complète dédiée à la vente d'équipements de jardinage électroniques avec tunnel de vente sécurisé.",
-        tags: ['Laravel', 'Stripe'],
+        tags: ['Laravel', 'Stripe', 'Bootstrap', 'MySQL'],
         tech: ['Laravel', 'Stripe', 'Bootstrap', 'MySQL'],
         stats: [
             { value: 'Secure', label: 'Paiement' },
@@ -137,6 +137,43 @@ export const projects: Project[] = [
             demo: 'https://electrojardin.com/',
         }
     },
+
+     {
+        id: 'SpaceBio_AI',
+        title: 'SpaceBio AI Intelligence Platform',
+        description: 'Plateforme de recherche scientifique assistée par IA pour la biologie spatiale.',
+        fullDescription: 'SpaceBio AI est une plateforme de recherche intelligente développée dans le cadre du NASA Space Apps Challenge 2025. Elle permet d’explorer, analyser et générer des publications scientifiques en biologie spatiale à partir de plus de 570 articles issus de la base NASA PMC. La plateforme intègre un moteur de recherche avancé, un assistant conversationnel basé sur l’IA et un générateur d’articles scientifiques.',
+        tags: ['Django', 'SQLite', 'Alpine.js', 'NASA'],
+        tech: [
+            'Django 5',
+            'SQLite',
+            'TailwindCSS',
+            'Alpine.js',
+            'HTMX',
+            'OpenRouter',
+            'Groq'
+        ],
+        stats: [
+            { value: '572+', label: 'Articles indexés' },
+            { value: 'AI', label: 'Recherche & Chat' },
+            { value: 'NASA', label: 'Données scientifiques' }
+        ],
+        features: [
+            'Recherche avancée multi-champs (titres, résumés, auteurs)',
+            'Filtrage intelligent par année de publication',
+            'Assistant IA conversationnel pour la recherche scientifique',
+            'Génération automatique d’articles scientifiques (Review, Research, Protocol)',
+            'Tableau de bord analytique pour le suivi des recherches et générations IA',
+            'Interface rapide et responsive orientée recherche'
+        ],
+        images: [
+            '/images/biology/hero.png',
+        ],
+        links: {
+            code: 'https://github.com/Yug-Su/biology_space.git'
+        }
+    },
+
     {
         id: 'dms',
         title: 'DMS Plateforme',
