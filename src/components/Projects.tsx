@@ -13,6 +13,16 @@ export const Projects = () => {
                         </div>
                     ))}
                 </div>
+                <div className="mt-16 flex justify-center" data-aos="fade-up">
+                    <a
+                        href="https://github.com/OlympBlack"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-3.5 rounded-lg font-semibold hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/25 hover:-translate-y-1"
+                    >
+                        Voir plus de projets
+                    </a>
+                </div>
             </div>
         </section>
     );
