@@ -18,6 +18,43 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        id: 'bmifactory',
+        title: 'BMI Factory',
+        description: 'Surveillance industrielle en temps réel avec prédiction des pannes.',
+        fullDescription: 'BMI Factory est une plateforme de monitoring industriel permettant de suivre l’état des machines, d’analyser les performances en temps réel et d’anticiper les pannes grâce à des indicateurs précis et des visualisations interactives.',
+        tags: ['FastAPI', 'React', 'Tailwind', 'Monitoring', '3D'],
+        tech: ['FastAPI', 'React', 'TailwindCSS', 'Framer Motion', 'ApexCharts', 'Three.js'],
+        stats: [
+            { value: '3', label: 'Indicateurs clés surveillés' },
+            { value: 'Temps réel', label: 'Monitoring' },
+            { value: 'Prédictif', label: 'Historique & projections' },
+        ],
+        features: [
+            'Tableau de bord central avec alertes critiques',
+            'Analyse thermique et vibratoire des machines',
+            'Journal des alertes avec filtrage par sévérité',
+            'Recherche prédictive pour visualiser l’état futur des machines',
+            'Visualisation 3D interactive des équipements'
+        ],
+        images: [
+            '/images/bmi/dashboard.png',
+            '/images/bmi/analytique.png',
+            '/images/bmi/3D.png',
+            '/images/bmi/alertes.png',
+            '/images/bmi/dark_dashboard.png',
+            '/images/bmi/dark_equipement.png',
+            '/images/bmi/equipements.png',
+            '/images/bmi/future.png',
+            '/images/bmi/historique.png',
+            '/images/bmi/login.png'
+        ],
+        links: {
+            demo: 'https://im-hack2026-groupe-6-fxtxrpzoy-olympblacks-projects.vercel.app/',
+            code: 'https://github.com/IFRI-Hackaton-L3-2025-2026/im-hack2026-groupe_6.git',
+            // api: 'https://im-hack2026-groupe-6-1.onrender.com/docs'
+        }
+    },
+    {
         id: 'karicv',
         title: 'KariCV',
         description: 'Générateur de CV professionnel avec export PDF optimisé.',
@@ -138,7 +175,7 @@ export const projects: Project[] = [
         }
     },
 
-     {
+    {
         id: 'SpaceBio_AI',
         title: 'SpaceBio AI Intelligence Platform',
         description: 'Plateforme de recherche scientifique assistée par IA pour la biologie spatiale.',
@@ -252,7 +289,8 @@ export const projects: Project[] = [
 
 export const skills = {
     frontend: ['React', 'Nuxt.js', 'TailwindCSS', 'bootstrap', 'TypeScript', 'HTML5/CSS3'],
-    backend: ['Laravel', 'PHP', 'Python', 'Django'],
+    backend: ['Laravel', 'PHP', 'Python', 'Django', 'FastAPI'],
+    api: ['REST API', 'FastAPI', 'JSON', 'Postman', 'OAuth2'],
     db: ['MySQL', 'PostgreSQL', 'Supabase', 'Firebase'],
     tools: ['Git', 'Docker', 'Figma', 'Vercel', 'render', 'Linux']
 };
@@ -275,4 +313,6 @@ export const toolsList = [
     { name: 'Nuxt.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg' },
     { name: 'Flutter', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg' },
 
+    { name: 'FastAPI', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg' },
+    { name: 'Postman', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-plain.svg' },
 ];

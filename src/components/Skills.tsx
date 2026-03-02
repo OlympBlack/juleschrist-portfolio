@@ -6,22 +6,26 @@ export const Skills = () => {
             <div className="container mx-auto px-6">
                 <h2 className="text-3xl font-bold mb-12 text-center text-foreground" data-aos="fade-up">Compétences</h2>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 mb-16">
                     <div className="bg-card border border-border p-6 rounded-lg hover:border-primary/50 transition-colors" data-aos="zoom-in" data-aos-delay="0">
                         <h4 className="text-lg font-semibold mb-3 text-foreground">Frontend</h4>
-                        <p className="text-muted-foreground text-sm">{skills.frontend.join(', ')}</p>
+                        <p className="text-muted-foreground text-sm">{(skills as any).frontend.join(', ')}</p>
                     </div>
                     <div className="bg-card border border-border p-6 rounded-lg hover:border-primary/50 transition-colors" data-aos="zoom-in" data-aos-delay="100">
                         <h4 className="text-lg font-semibold mb-3 text-foreground">Backend</h4>
-                        <p className="text-muted-foreground text-sm">{skills.backend.join(', ')}</p>
+                        <p className="text-muted-foreground text-sm">{(skills as any).backend.join(', ')}</p>
                     </div>
                     <div className="bg-card border border-border p-6 rounded-lg hover:border-primary/50 transition-colors" data-aos="zoom-in" data-aos-delay="200">
-                        <h4 className="text-lg font-semibold mb-3 text-foreground">Base de données</h4>
-                        <p className="text-muted-foreground text-sm">{skills.db.join(', ')}</p>
+                        <h4 className="text-lg font-semibold mb-3 text-foreground">API Development</h4>
+                        <p className="text-muted-foreground text-sm">{(skills as any).api.join(', ')}</p>
                     </div>
                     <div className="bg-card border border-border p-6 rounded-lg hover:border-primary/50 transition-colors" data-aos="zoom-in" data-aos-delay="300">
+                        <h4 className="text-lg font-semibold mb-3 text-foreground">Base de données</h4>
+                        <p className="text-muted-foreground text-sm">{(skills as any).db.join(', ')}</p>
+                    </div>
+                    <div className="bg-card border border-border p-6 rounded-lg hover:border-primary/50 transition-colors" data-aos="zoom-in" data-aos-delay="400">
                         <h4 className="text-lg font-semibold mb-3 text-foreground">Outils & DevOps</h4>
-                        <p className="text-muted-foreground text-sm">{skills.tools.join(', ')}</p>
+                        <p className="text-muted-foreground text-sm">{(skills as any).tools.join(', ')}</p>
                     </div>
                 </div>
 
