@@ -18,6 +18,63 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        id: 'certilearn',
+        title: 'CertiLearn',
+        description: 'Plateforme de formation en ligne avec gestion des cours, évaluations et certification.',
+
+        fullDescription: 'CertiLearn est une plateforme e-learning moderne permettant aux formateurs de créer et structurer des formations en ligne avec modules, leçons et quiz. Les apprenants peuvent parcourir les formations disponibles, s’inscrire, suivre les contenus pédagogiques et passer des évaluations. Une fois la formation terminée et l’examen réussi, un certificat est généré automatiquement. La plateforme inclut également un tableau de bord d’administration permettant de gérer les utilisateurs, valider les formations et superviser l’activité globale.',
+
+        tags: ['Laravel API', 'Nuxt.js', 'Sanctum', 'MySQL', 'E-learning'],
+
+        tech: [
+            'Laravel',
+            'Laravel Sanctum',
+            'Nuxt.js',
+            'Vue.js',
+            'TailwindCSS',
+            'MySQL',
+            'REST API'
+        ],
+
+        stats: [
+            { value: '3', label: 'Rôles utilisateurs (Admin, Formateur, Apprenant)' },
+            { value: 'REST', label: 'Architecture API sécurisée' },
+            { value: 'Certificat', label: 'Génération après réussite' },
+        ],
+
+        features: [
+            'Authentification sécurisée avec tokens (Laravel Sanctum)',
+            'Inscription et gestion des comptes apprenants',
+            'Création et gestion de formations par les formateurs',
+            'Organisation pédagogique avec modules et leçons',
+            'Système de quiz et évaluations',
+            'Inscription des apprenants aux formations',
+            'Suivi de progression et résultats',
+            'Génération automatique de certificats',
+            'Validation et publication des formations par l’administrateur',
+            'Gestion des catégories de formations'
+        ],
+
+        images: [
+            '/images/certilearn/hero.png',
+            '/images/certilearn/admin_dashboard.png',
+            '/images/certilearn/admin_formation.png',
+            '/images/certilearn/apprenant_dashboard.png',
+            '/images/certilearn/ctp.png',
+            '/images/certilearn/dark_mode.png',
+            '/images/certilearn/gestion_formations.png',
+            '/images/certilearn/gestion_users.png',
+            '/images/certilearn/login.png',
+            '/images/certilearn/manage_site.png',
+            '/images/certilearn/pourquoi_choisir_nous.png',
+            '/images/certilearn/register.png'
+        ],
+
+        links: {
+            code: 'https://github.com/OlympBlack/certiLearn-plateform.git'
+        }
+    },
+    {
         id: 'bmifactory',
         title: 'BMI Factory',
         description: 'Surveillance industrielle en temps réel avec prédiction des pannes.',
@@ -49,7 +106,7 @@ export const projects: Project[] = [
             '/images/bmi/login.png'
         ],
         links: {
-            demo: 'https://im-hack2026-groupe-6-fxtxrpzoy-olympblacks-projects.vercel.app/',
+            demo: 'https://youtu.be/RbYW9oiL-IA',
             code: 'https://github.com/IFRI-Hackaton-L3-2025-2026/im-hack2026-groupe_6.git',
             // api: 'https://im-hack2026-groupe-6-1.onrender.com/docs'
         }

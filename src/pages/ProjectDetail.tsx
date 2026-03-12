@@ -60,7 +60,8 @@ export const ProjectDetail = () => {
                     <div className="flex gap-4 mb-8">
                         {project.links.demo && (
                             <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className="flex-1 bg-primary text-primary-foreground py-3 rounded-lg font-semibold text-center hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20">
-                                <i className="fas fa-external-link-alt mr-2"></i> Voir le site
+                                <i className={`fas ${project.links.demo.includes('youtube.com') || project.links.demo.includes('youtu.be') ? 'fa-play-circle' : 'fa-external-link-alt'} mr-2`}></i>
+                                {project.links.demo.includes('youtube.com') || project.links.demo.includes('youtu.be') ? 'Démo Vidéo' : 'Voir le site'}
                             </a>
                         )}
                         {project.links.code && (
