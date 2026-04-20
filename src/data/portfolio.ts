@@ -18,6 +18,31 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        id: 'karicv',
+        title: 'KariCV',
+        description: 'Générateur de CV professionnel avec export PDF optimisé.',
+        fullDescription: 'Un générateur de CV moderne et intuitif conçu pour le marché africain francophone, permettant aux utilisateurs de créer, personnaliser et exporter des CV optimisés ATS en quelques minutes.',
+        tags: ['React', 'Tailwind', 'PDF'],
+        tech: ['React', 'TailwindCSS', 'PDF Generation'],
+        stats: [
+            { value: '6+', label: 'Modèles de CV' },
+            { value: '100%', label: 'Client-Side' },
+            { value: 'Fast', label: 'Export PDF' },
+        ],
+        features: [
+            'Éditeur en temps réel avec prévisualisation',
+            'Système de modèles interchangeables',
+            'Export PDF pixel-perfect compatible A4',
+            'Fonctionnement local (Privacy first)',
+            'Mode sombre et thèmes personnalisables'
+        ],
+        images: ['/images/karicv/Capture d\'écran 2026-01-20 171049.png', '/images/karicv/Capture d\'écran 2026-01-20 170450.png'],
+        links: {
+            demo: 'https://karicv.vercel.app/',
+
+        }
+    },
+    {
         id: 'certilearn',
         title: 'CertiLearn',
         description: 'Plateforme de formation en ligne avec gestion des cours, évaluations et certification.',
@@ -109,31 +134,6 @@ export const projects: Project[] = [
             demo: 'https://youtu.be/RbYW9oiL-IA',
             code: 'https://github.com/IFRI-Hackaton-L3-2025-2026/im-hack2026-groupe_6.git',
             // api: 'https://im-hack2026-groupe-6-1.onrender.com/docs'
-        }
-    },
-    {
-        id: 'karicv',
-        title: 'KariCV',
-        description: 'Générateur de CV professionnel avec export PDF optimisé.',
-        fullDescription: 'Un générateur de CV moderne et intuitif conçu pour le marché africain francophone, permettant aux utilisateurs de créer, personnaliser et exporter des CV optimisés ATS en quelques minutes.',
-        tags: ['React', 'Tailwind', 'PDF'],
-        tech: ['React', 'TailwindCSS', 'PDF Generation'],
-        stats: [
-            { value: '6+', label: 'Modèles de CV' },
-            { value: '100%', label: 'Client-Side' },
-            { value: 'Fast', label: 'Export PDF' },
-        ],
-        features: [
-            'Éditeur en temps réel avec prévisualisation',
-            'Système de modèles interchangeables',
-            'Export PDF pixel-perfect compatible A4',
-            'Fonctionnement local (Privacy first)',
-            'Mode sombre et thèmes personnalisables'
-        ],
-        images: ['/images/karicv/Capture d\'écran 2026-01-20 171049.png', '/images/karicv/Capture d\'écran 2026-01-20 170450.png'],
-        links: {
-            demo: 'https://karicv.vercel.app/',
-
         }
     },
     {
