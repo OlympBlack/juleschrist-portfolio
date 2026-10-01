@@ -14,9 +14,97 @@ export interface Project {
         api?: string;
         design?: string;
     };
+    portals?: { name: string; url: string }[];
 }
 
 export const projects: Project[] = [
+    {
+        id: 'plagix',
+        title: 'Plagix - Antiplagiat',
+        description: 'Plateforme Souveraine de Détection de Plagiat avec IA et moteur OCR académique.',
+        fullDescription: 'PLAGIX est une plateforme académique de détection de plagiat de niveau entreprise, développée par LAHALEX. Elle permet de comparer des documents (y compris des PDF scannés via OCR) avec une vaste base documentaire, détecter les paraphrases et le contenu généré par IA (ZeroGPT, Originality.ai), et générer des rapports certifiés. Ce projet démontre une maîtrise avancée de l\'architecture modulaire (Laravel), du traitement NLP multilingue (Python, Jina AI) et de la scalabilité via des files d\'attente asynchrones complexes.',
+        tags: ['Laravel', 'Python NLP', 'IA', 'OCR', 'OpenSearch'],
+        tech: ['Laravel', 'Python', 'PaddleOCR', 'Jina AI', 'MySQL', 'Redis'],
+        stats: [
+            { value: 'IA', label: 'Détection' },
+            { value: 'OCR', label: 'Analyse PDF' },
+            { value: 'NLP', label: 'Multilingue' }
+        ],
+        features: [
+            'Comparaison textuelle (CAMES), n-grams et sémantique',
+            'Détection IA multimodale et OCR pour images/PDF scannés',
+            'Architecture micro-services asynchrone avec workers',
+            'Génération de rapports d\'analyse avancés en PDF'
+        ],
+        images: [
+            '/images/plagix/portailAcceuil.png',
+            '/images/plagix/sso.png',
+            '/images/plagix/login.png',
+            '/images/plagix/nouveau_analyse.png',
+            '/images/plagix/analyse_en_cours.png',
+            '/images/plagix/detail_analyse.png',
+            '/images/plagix/liste_analyses.png',
+            '/images/plagix/moteur_de_recherche.png',
+            '/images/plagix/espace_admin.png',
+            '/images/plagix/portfeuille.png',
+            '/images/plagix/profil_user.png',
+            '/images/plagix/aide_support.png'
+        ],
+        links: {
+            demo: 'http://plagix.lahalex.com/'
+        }
+    },
+    {
+        id: 'lahalex-universel',
+        title: 'Lahalex Universel',
+        description: 'Vaste écosystème de bibliothèques numériques multisectorielles (Droit, Santé, Économie, STIM, Agro).',
+        fullDescription: 'Lahalex Universel est un projet d\'envergure interconnectant 5 plateformes de bibliothèques numériques spécialisées. Conçu pour faciliter l\'accès aux ressources académiques, il démontre une capacité exceptionnelle à concevoir des architectures distribuées supportant une forte charge.\n\nLe réseau universel comprend :\n- Sciences Juridiques (Porte d\'entrée) : https://sciences-juridiques.lahalex.com/\n- Sciences Économiques : https://science-eco.lahalex.com/\n- Sciences de la Santé : https://science-sante.lahalex.com/\n- Sciences Agronomiques : https://science-agro.lahalex.com/\n- STIM (Sciences, Technologies, Ingénierie, Mathématiques) : https://stim.lahalex.com/',
+        tags: ['Laravel', 'Écosystème', 'Portail web', 'SaaS'],
+        tech: ['Laravel', 'MySQL', 'TailwindCSS', 'Vue.js'],
+        stats: [
+            { value: '5', label: 'Plateformes' },
+            { value: 'Big Data', label: 'Ressources' },
+            { value: 'Universel', label: 'Accès' }
+        ],
+        features: [
+            'Portail centralisé pour 5 plateformes sectorielles',
+            'Moteur de recherche documentaire ultra-rapide',
+            'Gestion centralisée des utilisateurs et des accès',
+            'Interface ergonomique axée sur l\'expérience utilisateur (UX)'
+        ],
+        images: ['/images/lahalex-universel/placeholder.png'],
+        links: {},
+        portals: [
+            { name: 'Sciences Juridiques', url: 'https://sciences-juridiques.lahalex.com/' },
+            { name: 'Sciences Économiques', url: 'https://science-eco.lahalex.com/' },
+            { name: 'Sciences de la Santé', url: 'https://science-sante.lahalex.com/' },
+            { name: 'Sciences Agronomiques', url: 'https://science-agro.lahalex.com/' },
+            { name: 'STIM (Sciences, Tech, Ingénierie, Math)', url: 'https://stim.lahalex.com/' }
+        ]
+    },
+    {
+        id: 'controle-parental',
+        title: 'Contrôle Parental',
+        description: 'Application avancée de supervision parentale avec géolocalisation et gestion du temps d\'écran.',
+        fullDescription: 'Solution complète permettant aux parents de superviser l\'activité numérique de leurs enfants. L\'application intègre la gestion du temps d\'écran, des règles de filtrage de contenu, la géolocalisation, et un système de notifications en temps réel. Elle met en lumière une expertise dans les stacks modernes (Laravel, React 19) et l\'implémentation d\'API REST hautement sécurisées avec intégration Redis pour des performances optimales.',
+        tags: ['React 19', 'Laravel', 'Temps Réel', 'API'],
+        tech: ['Laravel', 'React 19', 'TypeScript', 'Redis', 'MySQL 8'],
+        stats: [
+            { value: 'React 19', label: 'Frontend UI' },
+            { value: 'Laravel', label: 'API Backend' },
+            { value: 'Temps réel', label: 'Supervision' }
+        ],
+        features: [
+            'Gestion fine du temps d\'écran et règles de filtrage',
+            'Suivi de géolocalisation et alertes en temps réel',
+            'Authentification JWT sécurisée via Laravel Sanctum',
+            'Architecture optimisée avec Redis pour cache et files d\'attente'
+        ],
+        images: ['/images/controle-parental/placeholder.png'],
+        links: {
+            code: 'https://github.com/OlympBlack/controle_parentale.git'
+        }
+    },
     {
         id: 'karicv',
         title: 'KariCV',

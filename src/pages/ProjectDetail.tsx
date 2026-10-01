@@ -57,6 +57,20 @@ export const ProjectDetail = () => {
                         </div>
                     </div>
 
+                    {project.portals && project.portals.length > 0 && (
+                        <div className="bg-card border border-border rounded-xl p-6 mb-8">
+                            <h3 className="font-semibold mb-4 text-foreground">Portails de l'écosystème</h3>
+                            <div className="grid gap-3">
+                                {project.portals.map((portal) => (
+                                    <a key={portal.name} href={portal.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors flex items-center gap-3 bg-secondary/50 p-3 rounded-lg border border-border/50 hover:bg-secondary">
+                                        <i className="fas fa-external-link-alt text-sm"></i>
+                                        <span className="font-medium">{portal.name}</span>
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+
                     <div className="flex gap-4 mb-8">
                         {project.links.demo && (
                             <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className="flex-1 bg-primary text-primary-foreground py-3 rounded-lg font-semibold text-center hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20">
