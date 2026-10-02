@@ -53,10 +53,10 @@ export const Contact = () => {
     };
 
     return (
-        <section id="contact" className="py-12 md:py-20">
+        <section id="contact" className="py-20">
             <div className="container mx-auto px-6">
-                <h2 className="text-3xl font-bold mb-8 text-center text-foreground" data-aos="fade-up">Me Contacter</h2>
-                <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+                <h2 className="text-3xl font-bold mb-12 text-center text-foreground" data-aos="fade-up">Me Contacter</h2>
+                <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
                     <div className="space-y-8" data-aos="fade-right">
                         <div className="flex items-start gap-4">
                             <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary shrink-0">
