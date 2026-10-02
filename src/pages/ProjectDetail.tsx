@@ -91,7 +91,30 @@ export const ProjectDetail = () => {
                     </div>
                     
                     {/* Vignettes */}
-                    {project.images.length > 1 && (
+                    {project.imageCategories ? (
+                        <div className="space-y-6">
+                            {project.imageCategories.map((category, catIdx) => (
+                                <div key={catIdx} className="space-y-3">
+                                    <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">{category.name}</h4>
+                                    <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 gap-3">
+                                        {category.images.map((img, idx) => (
+                                            <button 
+                                                key={idx} 
+                                                onClick={() => setActiveImage(img)}
+                                                className={`relative rounded-xl overflow-hidden border-2 transition-all duration-300 aspect-video ${activeImage === img ? 'border-primary ring-2 ring-primary/30 scale-105 shadow-lg z-10' : 'border-transparent hover:border-primary/50 opacity-60 hover:opacity-100'}`}
+                                            >
+                                                <img 
+                                                    src={img} 
+                                                    alt={`${category.name} - vue ${idx + 1}`} 
+                                                    className="w-full h-full object-cover" 
+                                                />
+                                            </button>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    ) : project.images.length > 1 && (
                         <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 gap-3">
                             {project.images.map((img, idx) => (
                                 <button 

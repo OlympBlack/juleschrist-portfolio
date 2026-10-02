@@ -15,6 +15,7 @@ export interface Project {
         design?: string;
     };
     portals?: { name: string; url: string }[];
+    imageCategories?: { name: string; images: string[] }[];
 }
 
 export const projects: Project[] = [
@@ -72,7 +73,101 @@ export const projects: Project[] = [
             'Gestion centralisée des utilisateurs et des accès',
             'Interface ergonomique axée sur l\'expérience utilisateur (UX)'
         ],
-        images: ['/images/lahalex-universel/placeholder.png'],
+        images: [
+            '/images/universel/juridique/library.png',
+            '/images/universel/juridique/login.png',
+            '/images/universel/juridique/article_juridique.png',
+            '/images/universel/juridique/lecutre_article.png',
+            '/images/universel/juridique/partage_article.png',
+            '/images/universel/juridique/assistance_techique.png',
+            '/images/universel/juridique/option.png',
+            '/images/universel/eco/library.png',
+            '/images/universel/eco/login.png',
+            '/images/universel/eco/article_scientifique.png',
+            '/images/universel/eco/lecture_article.png',
+            '/images/universel/eco/fiche_de_synthese.png',
+            '/images/universel/sante/library.png',
+            '/images/universel/sante/login.png',
+            '/images/universel/sante/dictionnaire.png',
+            '/images/universel/sante/explorateur_3D.png',
+            '/images/universel/sante/systeme_cardio_vasculaire.png',
+            '/images/universel/sante/systeme_musculaire.png',
+            '/images/universel/agro/library.png',
+            '/images/universel/agro/login.png',
+            '/images/universel/agro/donnee_statistique.png',
+            '/images/universel/agro/veille.png',
+            '/images/universel/agro/lecture_veille.png',
+            '/images/universel/agro/fiche_de_methode.png',
+            '/images/universel/agro/assistance_technique.png',
+            '/images/universel/agro/partager.png',
+            '/images/universel/stim/acceuil.png',
+            '/images/universel/stim/login.png',
+            '/images/universel/stim/mathematique.png',
+            '/images/universel/stim/ingenerie.png',
+            '/images/universel/stim/rencontre_scientifique.png',
+            '/images/universel/stim/lecture_rencontre_scientifique.png',
+            '/images/universel/stim/partager.png'
+        ],
+        imageCategories: [
+            {
+                name: 'Sciences Juridiques',
+                images: [
+                    '/images/universel/juridique/library.png',
+                    '/images/universel/juridique/login.png',
+                    '/images/universel/juridique/article_juridique.png',
+                    '/images/universel/juridique/lecutre_article.png',
+                    '/images/universel/juridique/partage_article.png',
+                    '/images/universel/juridique/assistance_techique.png',
+                    '/images/universel/juridique/option.png'
+                ]
+            },
+            {
+                name: 'Sciences Économiques',
+                images: [
+                    '/images/universel/eco/library.png',
+                    '/images/universel/eco/login.png',
+                    '/images/universel/eco/article_scientifique.png',
+                    '/images/universel/eco/lecture_article.png',
+                    '/images/universel/eco/fiche_de_synthese.png'
+                ]
+            },
+            {
+                name: 'Sciences de la Santé',
+                images: [
+                    '/images/universel/sante/library.png',
+                    '/images/universel/sante/login.png',
+                    '/images/universel/sante/dictionnaire.png',
+                    '/images/universel/sante/explorateur_3D.png',
+                    '/images/universel/sante/systeme_cardio_vasculaire.png',
+                    '/images/universel/sante/systeme_musculaire.png'
+                ]
+            },
+            {
+                name: 'Sciences Agronomiques',
+                images: [
+                    '/images/universel/agro/library.png',
+                    '/images/universel/agro/login.png',
+                    '/images/universel/agro/donnee_statistique.png',
+                    '/images/universel/agro/veille.png',
+                    '/images/universel/agro/lecture_veille.png',
+                    '/images/universel/agro/fiche_de_methode.png',
+                    '/images/universel/agro/assistance_technique.png',
+                    '/images/universel/agro/partager.png'
+                ]
+            },
+            {
+                name: 'STIM',
+                images: [
+                    '/images/universel/stim/acceuil.png',
+                    '/images/universel/stim/login.png',
+                    '/images/universel/stim/mathematique.png',
+                    '/images/universel/stim/ingenerie.png',
+                    '/images/universel/stim/rencontre_scientifique.png',
+                    '/images/universel/stim/lecture_rencontre_scientifique.png',
+                    '/images/universel/stim/partager.png'
+                ]
+            }
+        ],
         links: {},
         portals: [
             { name: 'Sciences Juridiques', url: 'https://sciences-juridiques.lahalex.com/' },
@@ -456,11 +551,11 @@ export const projects: Project[] = [
 ];
 
 export const skills = {
-    frontend: ['React', 'Nuxt.js', 'TailwindCSS', 'bootstrap', 'TypeScript', 'HTML5/CSS3'],
-    backend: ['Laravel', 'PHP', 'Python', 'Django', 'FastAPI'],
-    api: ['REST API', 'FastAPI', 'JSON', 'Postman', 'OAuth2'],
-    db: ['MySQL', 'PostgreSQL', 'Supabase', 'Firebase'],
-    tools: ['Git', 'Docker', 'Figma', 'Vercel', 'render', 'Linux']
+    frontend: ['React', 'Vue.js', 'Nuxt.js', 'TailwindCSS', 'Bootstrap', 'TypeScript', 'HTML5/CSS3'],
+    backend: ['Laravel', 'PHP', 'Python', 'Django', 'FastAPI', 'NLP / OCR (IA)'],
+    api: ['REST API', 'FastAPI', 'Microservices', 'JSON', 'Postman', 'OAuth2 / Sanctum'],
+    db: ['MySQL', 'Redis', 'OpenSearch', 'PostgreSQL', 'Supabase', 'Firebase'],
+    tools: ['Git', 'Docker', 'Figma', 'Vercel', 'Render', 'Linux', 'Message Queues']
 };
 
 export const toolsList = [
