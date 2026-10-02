@@ -29,8 +29,8 @@ export const Hero = () => {
                         </div>
                         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-foreground leading-tight tracking-tight">
                             Salut, je suis <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">
-                                GBASSI Jules-Christ
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600 whitespace-nowrap">
+                                Jules-Christ GBASSI
                             </span>
                         </h1>
                         <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 leading-relaxed">
