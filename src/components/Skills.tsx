@@ -2,11 +2,11 @@ import { skills, toolsList } from '../data/portfolio';
 
 export const Skills = () => {
     return (
-        <section id="skills" className="py-20">
+        <section id="skills" className="py-12 md:py-20">
             <div className="container mx-auto px-6">
-                <h2 className="text-3xl font-bold mb-12 text-center text-foreground" data-aos="fade-up">Compétences</h2>
+                <h2 className="text-3xl font-bold mb-8 text-center text-foreground" data-aos="fade-up">Compétences</h2>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 mb-16">
+                <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 mb-10">
                     <div className="bg-card border border-border p-6 rounded-lg hover:border-primary/50 transition-colors" data-aos="zoom-in" data-aos-delay="0">
                         <h4 className="text-lg font-semibold mb-3 text-foreground">Frontend</h4>
                         <p className="text-muted-foreground text-sm">{(skills as any).frontend.join(', ')}</p>

@@ -65,12 +65,12 @@ export const ProjectDetail = () => {
     }
 
     return (
-        <div className="container mx-auto px-6 py-12">
+        <div className="container mx-auto px-6 py-8">
             <button onClick={() => navigate(-1)} className="mb-8 flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
                 <i className="fas fa-arrow-left"></i> Retour
             </button>
 
-            <div className="grid lg:grid-cols-2 gap-12 mb-16">
+            <div className="grid lg:grid-cols-2 gap-8 mb-12">
                 <div data-aos="fade-right" className="space-y-6">
                     {/* Image principale */}
                     <div 

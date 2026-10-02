@@ -1,9 +1,9 @@
 export const About = () => {
     return (
-        <section id="about" className="py-20 md:py-32">
+        <section id="about" className="py-12 md:py-20">
             <div className="container mx-auto px-6">
-                <h2 className="text-3xl font-bold mb-12 text-center text-foreground" data-aos="fade-up">À Propos</h2>
-                <div className="grid md:grid-cols-2 gap-12 items-center">
+                <h2 className="text-3xl font-bold mb-8 text-center text-foreground" data-aos="fade-up">À Propos</h2>
+                <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div className="relative" data-aos="fade-right">
                         <img
                             src="/images/moi.png"
