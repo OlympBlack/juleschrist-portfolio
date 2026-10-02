@@ -23,7 +23,7 @@ export const Hero = () => {
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
 
                     {/* Left Column: Text Content */}
-                    <div className="text-center lg:text-left space-y-6" data-aos="fade-right">
+                    <div className="text-center lg:text-left space-y-6 lg:pl-8 xl:pl-20" data-aos="fade-right">
                         <div className="inline-block px-3 py-1 bg-secondary/50 text-secondary-foreground rounded-full text-sm font-medium border border-border mb-2 backdrop-blur-sm">
                             👋 Bienvenue sur mon portfolio
                         </div>
@@ -56,7 +56,7 @@ export const Hero = () => {
                     </div>
 
                     {/* Right Column: Orbiting Animation */}
-                    <div className="relative h-[400px] sm:h-[450px] lg:h-[500px] w-full flex items-center justify-center lg:justify-end scale-[0.6] sm:scale-75 md:scale-90 lg:scale-100 transform-gpu" data-aos="fade-left">
+                    <div className="relative h-[400px] sm:h-[450px] lg:h-[500px] w-full flex items-center justify-center lg:justify-end scale-[0.6] sm:scale-75 md:scale-90 lg:scale-100 transform-gpu lg:pr-8 xl:pr-20" data-aos="fade-left">
                         <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg bg-background/5 pb-10 sm:pb-0">
 
                             {/* Central Image */}
