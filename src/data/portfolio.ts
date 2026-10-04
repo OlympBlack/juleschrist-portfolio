@@ -41,7 +41,7 @@ export const projects: Project[] = [
             '/images/lucidelab/cover.png'
         ],
         links: {
-            code: 'https://github.com/OlympBlack/lucidelabService'
+            demo: 'https://lucidelab-service.vercel.app/'
         }
     },
     {
@@ -206,9 +206,9 @@ export const projects: Project[] = [
         id: 'controle-parental',
         title: 'SafeKid',
         description: 'Application multiplateforme (web et mobile) de supervision parentale avec géolocalisation et gestion du temps d\'écran.',
-        fullDescription: 'SafeKid est une solution complète multiplateforme (disponible sur web et mobile) permettant aux parents de superviser l\'activité numérique de leurs enfants. L\'application intègre la gestion du temps d\'écran, des règles de filtrage de contenu, la géolocalisation, et un système de notifications en temps réel. Elle met en lumière une expertise dans les stacks modernes (Laravel, React 19) et l\'implémentation d\'API REST hautement sécurisées avec intégration Redis pour des performances optimales.',
-        tags: ['React 19', 'Laravel', 'Web & Mobile', 'API'],
-        tech: ['Laravel', 'React 19', 'TypeScript', 'Redis', 'MySQL 8'],
+        fullDescription: 'SafeKid est une solution complète multiplateforme (disponible sur web et application mobile) permettant aux parents de superviser l\'activité numérique de leurs enfants. L\'application intègre la gestion du temps d\'écran, des règles de filtrage de contenu, la géolocalisation, et un système de notifications en temps réel. Elle met en lumière une expertise dans les stacks modernes avec une interface web en React 19, une application mobile native en React Native, et l\'implémentation d\'API REST hautement sécurisées (Laravel) avec intégration Redis pour des performances optimales.',
+        tags: ['React Native', 'React 19', 'Laravel', 'Web & Mobile'],
+        tech: ['Laravel', 'React Native', 'React 19', 'TypeScript', 'Redis', 'MySQL 8'],
         stats: [
             { value: 'Multiplateforme', label: 'Web & Mobile' },
             { value: 'Laravel', label: 'API Backend' },
