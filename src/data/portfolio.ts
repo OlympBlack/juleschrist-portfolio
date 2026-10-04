@@ -20,6 +20,34 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        id: 'lucidelab',
+        title: 'Lucide Lab',
+        description: 'Plateforme web officielle et tableau de bord (CMS) pour le cabinet d\'expertise Lucide Lab.',
+        fullDescription: 'LUCIDE LAB est une plateforme web moderne conçue pour un cabinet d\'expertise en communication, branding et stratégie de croissance. Le projet inclut un site vitrine 100% responsive, développé avec React 18, TypeScript et Vite, présentant les services, réalisations et articles de blog. Le backend est propulsé par une API REST robuste sous Laravel, qui alimente un puissant panneau d\'administration (CMS sur-mesure). Cet espace administrateur permet à l\'équipe du cabinet de gérer dynamiquement leur contenu en temps réel (pôles d\'expertise, projets, partenaires, actualités et messages de contact).',
+        tags: ['React', 'TypeScript', 'Laravel', 'CMS', 'API REST'],
+        tech: ['React', 'TypeScript', 'Vite', 'Laravel', 'SQLite', 'CSS Vanilla'],
+        stats: [
+            { value: 'CMS', label: 'Sur-mesure' },
+            { value: 'API', label: 'RESTful' },
+            { value: '100%', label: 'Découplé' }
+        ],
+        features: [
+            'Site vitrine Full Width moderne et 100% responsive',
+            'Panneau d\'administration complet (CMS) pour gérer le contenu du site en temps réel',
+            'Architecture découplée Frontend (React) / Backend (Laravel API)',
+            'Intégration d\'une horloge numérique en temps réel et système de design avancé'
+        ],
+        images: [
+            '/images/lucidelab/accueil.png',
+            '/images/lucidelab/services.png',
+            '/images/lucidelab/admin_dashboard.png',
+            '/images/lucidelab/admin_content.png'
+        ],
+        links: {
+            code: 'https://github.com/OlympBlack/lucidelabService'
+        }
+    },
+    {
         id: 'plagix',
         title: 'Plagix - Antiplagiat',
         description: 'Plateforme Souveraine de Détection de Plagiat avec IA et moteur OCR académique.',
