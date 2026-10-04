@@ -38,10 +38,7 @@ export const projects: Project[] = [
             'Intégration d\'une horloge numérique en temps réel et système de design avancé'
         ],
         images: [
-            '/images/lucidelab/accueil.png',
-            '/images/lucidelab/services.png',
-            '/images/lucidelab/admin_dashboard.png',
-            '/images/lucidelab/admin_content.png'
+            '/images/lucidelab/cover.png'
         ],
         links: {
             code: 'https://github.com/OlympBlack/lucidelabService'
