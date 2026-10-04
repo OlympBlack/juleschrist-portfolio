@@ -24,7 +24,7 @@ export const projects: Project[] = [
         title: 'Plagix - Antiplagiat',
         description: 'Plateforme Souveraine de Détection de Plagiat avec IA et moteur OCR académique.',
         fullDescription: 'PLAGIX est une plateforme académique de détection de plagiat de niveau entreprise, développée par LAHALEX. Elle permet de comparer des documents (y compris des PDF scannés via OCR) avec une vaste base documentaire, détecter les paraphrases et le contenu généré par IA (ZeroGPT, Originality.ai), et générer des rapports certifiés. Ce projet démontre une maîtrise avancée de l\'architecture modulaire (Laravel), du traitement NLP multilingue (Python, Jina AI) et de la scalabilité via des files d\'attente asynchrones complexes.',
-        tags: ['Laravel', 'Python NLP', 'IA', 'OCR', 'OpenSearch'],
+        tags: ['Laravel', 'Python NLP', 'IA', 'OCR', 'OpenSearch', 'SSO'],
         tech: ['Laravel', 'Python', 'PaddleOCR', 'Jina AI', 'MySQL', 'Redis'],
         stats: [
             { value: 'IA', label: 'Détection' },
