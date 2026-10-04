@@ -60,7 +60,7 @@ export const projects: Project[] = [
         title: 'Lahalex Universel',
         description: 'Vaste écosystème de bibliothèques numériques multisectorielles (Droit, Santé, Économie, STIM, Agro).',
         fullDescription: 'Lahalex Universel est un projet d\'envergure interconnectant 5 plateformes de bibliothèques numériques spécialisées. Conçu pour faciliter l\'accès aux ressources académiques, il démontre une capacité exceptionnelle à concevoir des architectures distribuées supportant une forte charge.\n\nLe réseau universel comprend :\n- Sciences Juridiques (Porte d\'entrée) : https://sciences-juridiques.lahalex.com/\n- Sciences Économiques : https://science-eco.lahalex.com/\n- Sciences de la Santé : https://science-sante.lahalex.com/\n- Sciences Agronomiques : https://science-agro.lahalex.com/\n- STIM (Sciences, Technologies, Ingénierie, Mathématiques) : https://stim.lahalex.com/',
-        tags: ['Laravel', 'Écosystème', 'Portail web', 'SaaS'],
+        tags: ['Laravel', 'Écosystème', 'Portail web', 'SaaS', 'SSO'],
         tech: ['Laravel', 'MySQL', 'TailwindCSS', 'Vue.js'],
         stats: [
             { value: '5', label: 'Plateformes' },
